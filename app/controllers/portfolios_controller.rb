@@ -14,7 +14,7 @@ class PortfoliosController < ApplicationController
       if @portfolio_item.save
         format.html {redirect_to portfolios_path, notice: 'Your portfolio has been created'}
       else
-        fromart.html {redirect_to :new}
+        format.html {redirect_to :new}
       end
     end
   end
@@ -29,8 +29,12 @@ class PortfoliosController < ApplicationController
       if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
         format.html {redirect_to portfolios_path, notice: 'Your portfolio has been updated'}
       else
-        fromart.html {redirect_to :edit}
+        format.html {redirect_to :edit}
       end
     end
+  end
+
+  def show
+    @portfolio_item = Portfolio.find(params[:id])
   end
 end
