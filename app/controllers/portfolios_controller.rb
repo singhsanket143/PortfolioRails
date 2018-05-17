@@ -1,5 +1,7 @@
 class PortfoliosController < ApplicationController
 
+  layout "portfolio"
+
   def index
     # @portfolio_items = Portfolio.angular
     # @portfolio_items = Portfolio.ruby_on_rails
