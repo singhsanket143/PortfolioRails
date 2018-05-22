@@ -8,5 +8,5 @@ class ApplicationController < ActionController::Base
     session[:source] = params[:q] if params[:q]
   end
 
-
 end
+
