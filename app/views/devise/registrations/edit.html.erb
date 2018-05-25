@@ -1,7 +1,6 @@
 <div class="card">
   <div class="card-block">
     <div class="row">
-
       <div class="col-md-8">
         <h3>Edit User</h3>
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {method: :put}) do |f| %>
@@ -52,7 +51,7 @@
       </div>
     </div>
     <div class="auth-link">
-      <span class="badge badge-warning"><%= link_to "Back", :back %></span>
+      <%= link_to "Back", :back %>
     </div>
 
 
