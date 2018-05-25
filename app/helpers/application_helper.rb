@@ -19,6 +19,6 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    @copyright = SanketViewTool::Renderer.copyright "Sanket Singh", "All Rights Reserved"
+    @copyright = SanketViewTool::Renderer.copyright "Sanket Singh ", " All Rights Reserved"
   end
 end
