@@ -62,3 +62,4 @@ gem 'sanket_view_tool', git: 'https://github.com/singhsanket143/sanket_view_tool
 gem 'petergate', '~> 1.7'
 gem 'font-awesome-rails', '~> 4.7', '>=4.7.0.1'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'jquery-ui-rails', '~> 6.0', '>=6.0.1'
